@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoeFood</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/3aa80303c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="index.js"></script>
+</head>
+
+<header>
+<body>
+    <div id="logo">DoeFood</div>
+    <!--<h1><a href="../login">Faça o login</a> </h1>-->
+  <div>
+    <div class="search">
+      <div class="search-bar" id="search_bar">
+        <input type="text" placeholder="Pesquise no DoeFood...">
+      </div>
+      <a href="#" id="search_btn" onclick="search_bar_anim()">
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div>
+    <div class="cart">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <p>0</p>
+    </div>
+  </div>
+
+  <section class="main">
+    <a href="#" id="chat-icon" onclick="abrirChat()">
+        <i class="fa-regular fa-circle-question"></i>
+    </a>
+
+   <div id="chatModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <h2>Chat</h2> 
+            
+            <div class="duvida" id="duvida">
+                <input type="text" id="pergunta" placeholder="Digite aqui dua duvida...">
+                <div id="search-results"></div>
+                <i class="fa-solid fa-magnifying-glass" onclick="enviarPergunta('')"></i>
+            </div>
+        </div>
+    </div> 
+
+    <a href="#" class="chat-icon" onclick="abrirModal()">
+        <i class="fa-regular fa-circle-question"></i>
+    </a>        
+</section>
+</header>
+        <div class="main-content">
+            <section class="branco">
+                random line
+            </section> 
+            <section class="branco">
+                random line
+            </section> 
+
+            <h1>Com <span>DoeFood</span> fica f&aacute;cil doar.</h1>
+
+            <div class="slideshow-container">
+                <div class="slide">
+                  <img src="slide1.jpg" alt="Imagem 1">
+                </div>
+                <div class="slide">
+                  <img src="slide2.jpg" alt="Imagem 2">
+                </div>
+                <div class="slide">
+                  <img src="slide3.jpg" alt="Imagem 3">
+                </div>
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+              </div>
+              <section class="branco">
+                random line
+            </section> 
+            <section class="branco">
+                random line
+            </section> 
+
+            <h2>Conhe&ccedil;a nossos Produtos:</h2>
+            <section class="branco">
+                random line
+            </section> 
+        </div>
+    </section>
+    <section class="branco">
+        random line
+    </section> 
+    <section class="branco">
+        random line
+    </section> 
+    <section class="branco">
+        random line
+    </section> 
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+
+    <section id="news">
+        <div class="direito"><a class="pag" href="#">Hamb&uacute;rguers</a></div><div class="esquerdo"> <a class="pag" href="../combo">Combos</a></div>
+        <section class="um">
+            <div class="news-tiles">
+                <article class="news-tile">
+                    <div class="food-tile">
+                        <img src="hamb1.jpg" alt="Hamb 1" width="500">
+                        <div class="food-tile-container">
+                        <div class="food-tile-container-info">
+                            <h4>Chegou o novo Apetitoso&#33;</h4>
+                            <p>Um delicioso hamburguer de Frango especial&#33;</p>
+                        </div>
+                        <div class="food-tile-container-action">
+                            <a href="login.html">Partiu</a>
+                        </div>
+                      </div>
+                    </div>
+                </article>
+              <article class="news-tile">
+                <div class="food-tile">
+                    <img src="hamb2.jpg" alt="Hamb 1" width="500">
+                    <div class="food-tile-container">
+                        <div class="food-tile-container-info">
+                            <h4>Confira agora o nosso Saboroso&#33;</h4>
+                            <p>Um sabor extremamente especial&#33;</p>
+                        </div>
+                        <div class="food-tile-container-action">
+                            <a href="../login">Partiu</a>
+                        </div>
+                    </div>
+                </div>
+              </article>
+        </section>
+        <section class="um">
+            <div class="news-tiles">
+                <article class="news-tile">
+                    <div class="food-tile">
+                        <img src="hamb3.jpg" alt="Hamb 1" width="500">
+                        <div class="food-tile-container">
+                        <div class="food-tile-container-info">
+                            <h4>Confira o famoso Larica</h4>
+                            <p>Para quando aquela fome bater...</p>
+                        </div>
+                        <div class="food-tile-container-action">
+                            <a href="../login">Partiu</a>
+                        </div>
+                      </div>
+                    </div>
+                </article>
+              <article class="news-tile">
+                <div class="food-tile">
+                    <img src="slide2.jpg" alt="Hamb 1" width="500">
+                    <div class="food-tile-container">
+                        <div class="food-tile-container-info">
+                            <h4>Se apaixone pelo Apaixonado</h4>
+                            <p>Um toque de amor no seu hamburguer</p>
+                        </div>
+                        <div class="food-tile-container-action">
+                            <a href="../login">Partiu</a>
+                        </div>
+                    </div>
+                </div>
+              </article>
+        </section>
+
+        <section class="um">
+            <div class="news-tiles">
+                <article class="news-tile">
+                    <div class="food-tile">
+                        <img src="slide4.jpg" alt="Hamb 1" width="500">
+                        <div class="food-tile-container">
+                        <div class="food-tile-container-info">
+                            <h4>Vamos provar o Suculento</h4>
+                            <p>&Eacute; muita gostosura para s&oacute; um hamburguer!</p>
+                        </div>
+                        <div class="food-tile-container-action">
+                            <a href="../login">Partiu</a>
+                        </div>
+                      </div>
+                    </div>
+                </article>
+              <article class="news-tile">
+                <div class="food-tile">
+                    <img src="slide5.jpg" alt="Hamb 1" width="500">
+                    <div class="food-tile-container">
+                        <div class="food-tile-container-info">
+                            <h4>Confira agora o nosso Solteir&atilde;o</h4>
+                            <p>Quem t&aacute; sozinho tamb&eacute;m tem fome</p>
+                        </div>
+                        <div class="food-tile-container-action">
+                            <a href="login.html">Partiu</a>
+                        </div>
+                    </div>
+                </div>
+              </article>
+        </section>
+            </div>
+    </section>
+    <section class="branco">
+        random line
+    </section> 
+    <section class="branco">
+        random line
+    </section> 
+    <section class="branco">
+        random line
+    </section> 
+    <section class="branco">
+        random line
+    </section> 
+     <section class="branco">
+                random line
+            </section> 
+            <section class="branco">
+                random line
+            </section> 
+    <footer class="footer">
+        <div class="contact-info">
+            <p><b>Um projeto GRUPO 1 - Programadores do Amanhã</b></p>
+            <p>Entre em contato conosco</p>
+            <p>Telefone: (00) 1234-5678</p>
+            <p>Email: contatodoefood@Email.com</p>
+        </div>
+        <div class="logofoot">
+            <img src="logofoot.png" alt="logofoot">
+        </div>
+        <div class="social-media">
+           <p><a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="Facebook"></a></p> 
+           <p><a href="https://www.instagram.com/" target="_blank"><img src="instagram.png" alt="Instagram"></a></p>
+           <p><a href="https://www.twitter.com/" target="_blank"><img src="twitter.png" alt="Twitter"></a></p> 
+           <p><a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" alt="Twitter"></a></p>
+        </div>
+    </footer>
+</body>
+</html>
